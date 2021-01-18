@@ -8,14 +8,58 @@
   <!-- CSS only Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  
-
-
 </head>
+
 <body>
+  <!-- Title -->
+  <h1 class="text-center my-4 display-2">Task App</h1>
   
+  <!-- Main-content Form -->
+  <div class="container-fluid w-75">
+    <form action="POST"></form>
+      <div class="row">
 
+        <div class="col my-4">
 
+          <label for="task-name" class="form-label">Task Name: </label>
+          <br>
+          <input type="text" name="task-name" id="task-name" required placeholder="Enter Task" class="form-control">
+        </div>    
+      </div>
+
+      <div class="row">
+        <div class="col my-4">
+          <label for="description" class="form-label">Description: </label>
+          <br>
+
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Task Description"></textarea>
+
+          <!-- <input type="text" name="description" id="description" required placeholder="Task Details" > -->
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col my-4">
+          <label for="assigned" class="form-label">Assigned To: </label>
+          <br>
+          <input type="text" name="assigned" id="assigned" required placeholder="Enter Name" class="form-control">
+        </div>
+
+        <div class="col my-4">
+          <label for="date" class="form-label">Due Date: </label>
+          <br>
+          <input type="date" name="date" id="date" required class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-primary px-5">Add</button>
+        </div>
+      </div>
+
+    </form>
+  </div>      
 
 
 
